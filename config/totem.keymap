@@ -211,10 +211,10 @@
         layer_6 {
             label = "game";
             bindings = <
-                &kp Q  &kp W  &kp E      &kp R      &kp T             &kp Y   &kp U  &kp I   &kp O      &kp QUESTION
-                &kp A  &kp S  &kp D      &kp F      &kp G             &kp H   &kp J  &kp K   &kp L      &kp P
-&sk LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V      &kp B             &kp B   &kp N  &kp M   &kp COMMA  &kp PERIOD    &sk LEFT_SHIFT
-                              &kp LCTRL  &kp SPACE  &kp LEFT_SHIFT    &trans  &to 0  &trans
+             &kp Q  &kp W  &kp E      &kp R      &kp T             &kp Y   &kp U  &kp I   &kp O      &kp QUESTION
+             &kp A  &kp S  &kp D      &kp F      &kp G             &kp H   &kp J  &kp K   &kp L      &kp P
+&kp LA(TAB)  &kp Z  &kp X  &kp C      &kp V      &kp B             &kp B   &kp N  &kp M   &kp COMMA  &kp PERIOD    &sk LEFT_SHIFT
+                           &kp LCTRL  &kp SPACE  &kp LEFT_SHIFT    &trans  &to 0  &trans
             >;
         };
     };
