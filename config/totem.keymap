@@ -101,6 +101,11 @@
             bindings = <&kp TAB>;
             key-positions = <27 28 29>;
         };
+
+        game {
+            bindings = <&to 5>;
+            key-positions = <21 22 23 24 25>;
+        };
     };
 
     behaviors {
@@ -203,21 +208,13 @@
             >;
         };
 
-        left-sym-num {
-            bindings = <
-        &trans         &mt LS(N9) N9              &mt LS(N8) N8              &mt LS(N7) N7              &trans    &trans  &trans  &trans  &trans  &trans
-        &mt LS(N0) N0  &mt LS(NUMBER_6) NUMBER_6  &mt LS(N5) N5              &mt LS(NUMBER_4) NUMBER_4  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans         &mt LS(NUMBER_3) NUMBER_3  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_1) N1        &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                                  &trans                     &trans                     &trans    &trans  &trans  &trans
-            >;
-        };
-
         layer_6 {
+            label = "game";
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+                &kp Q  &kp W  &kp E      &kp R      &kp T             &kp Y   &kp U  &kp I   &kp O      &kp QUESTION
+                &kp A  &kp S  &kp D      &kp F      &kp G             &kp H   &kp J  &kp K   &kp L      &kp P
+&sk LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V      &kp B             &kp B   &kp N  &kp M   &kp COMMA  &kp PERIOD    &sk LEFT_SHIFT
+                              &kp LCTRL  &kp SPACE  &kp LEFT_SHIFT    &trans  &to 0  &trans
             >;
         };
     };
